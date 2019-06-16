@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import arrowIcon from "./arrow.svg";
 import profilePic from "./profilePic.jpg";
 import likeIcon from "./likeIcon.svg";
-
+import sendIcon from "./send.svg";
 class Comments extends Component {
   state = {
     choice: ["Most interesting", "Oldest", "Newest"],
@@ -27,10 +27,13 @@ class Comments extends Component {
             <img src={profilePic} alt="" />
           </div>
           <div className="text-area">
-            <input type="text" placeholder="Leave a comment" />
+            <input type="text" placeholder="Leave a comment..." />
             <div className="file-attach" />
             <div className="pic-attach" />
             <div className="emoji-attach" />
+          </div>
+          <div className="send">
+            <img src={sendIcon} alt="" />
           </div>
         </div>
       </div>

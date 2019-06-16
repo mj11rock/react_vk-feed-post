@@ -4,7 +4,7 @@ import "./App.css";
 import Title from "./vk-feed/title";
 import Content from "./vk-feed/content";
 import Like from "./vk-feed/like";
-
+import Comments from "./vk-feed/comments";
 class App extends Component {
   state = {};
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
         <Title />
         <Content />
         <Like />
+        <Comments />
       </div>
     );
   }
