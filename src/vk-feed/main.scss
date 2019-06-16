@@ -1,0 +1,30 @@
+.like {
+  position: relative;
+  .svg {
+    position: absolute;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .views {
+    position: absolute;
+    right: 0;
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.num {
+  display: inline-block;
+  padding-top: 10px;
+  white-space: nowrap;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: 550;
+  color: rgb(131, 130, 130);
+}
