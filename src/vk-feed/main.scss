@@ -1,25 +1,6 @@
 $main-font-color: #2a5885;
 $date-color: #939393;
-.like {
-  position: relative;
-  .svg {
-    position: absolute;
-    img {
-      width: 24px;
-      height: 24px;
-    }
-  }
 
-  .views {
-    position: absolute;
-    right: 0;
-
-    img {
-      width: 12px;
-      height: 12px;
-    }
-  }
-}
 .owner-img {
   img {
     border-radius: 50%;
@@ -48,7 +29,6 @@ $date-color: #939393;
 }
 
 .post-content {
-  display: block;
   padding: 8px 20px 20px;
 
   .discription {
@@ -57,13 +37,87 @@ $date-color: #939393;
   img {
     border-bottom: 1px solid $date-color;
   }
+  :hover {
+    cursor: pointer;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid rgb(204, 204, 204);
+  }
 }
-.num {
-  display: inline-block;
-  padding-top: 10px;
-  white-space: nowrap;
-  padding: 3px;
-  margin-right: 10px;
-  font-weight: 550;
-  color: rgb(131, 130, 130);
+
+.like {
+  display: flex;
+  margin-bottom: 20px;
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+  .views {
+    display: flex;
+    margin-left: auto;
+    padding: 0 21px;
+    justify-content: end;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid rgb(204, 204, 204);
+  }
+}
+
+.like-btn {
+  &:hover {
+    cursor: pointer;
+  }
+  margin-left: 21px;
+}
+
+.like-icon {
+  background-image: url("./likeButton.svg");
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+.comment-icon {
+  background-image: url("./commentsButton.svg");
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+.reply-icon {
+  background-image: url("./replyButton.svg");
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.num-setting {
+  font-size: 14px;
+  height: 16px;
+  padding: 3px 0;
+  font-weight: bolder;
+  overflow: hidden;
+  margin-left: 6px;
+  color: #67707a;
+}
+.view-icon {
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    margin-right: 5px;
+    background-image: url("./viewIcon.svg");
+    background-repeat: no-repeat;
+  }
 }

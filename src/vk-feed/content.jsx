@@ -10,6 +10,7 @@ class Content extends Component {
       <div className="post-content">
         <div className="discription">{this.state.discription}</div>
         <img src={postImg} alt="" />
+        <hr />
       </div>
     );
   }

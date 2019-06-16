@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import likeBtn from "./likeButton.svg";
+
 import commBtn from "./commentsButton.svg";
 import replyBtn from "./replyButton.svg";
 import views from "./viewIcon.svg";
@@ -14,18 +14,18 @@ class Like extends Component {
   render() {
     return (
       <div className="like">
-        <div className="svg">
-          <img src={likeBtn} className="like-btn" alt="" />
-          <div className="num">{this.state.likeAmount}</div>
-          <img src={commBtn} className="like-btn" alt="" />
-          <div className="num">{this.state.commAmount}</div>
-          <img src={replyBtn} className="like-btn" alt="" />
-          <div className="num">{this.state.replyAmount}</div>
+        <div className="icons">
+          <div className="like-btn like-icon icon" />
+          <div className="num-setting">{this.state.likeAmount}</div>
+          <div className="like-btn comment-icon icon" />
+          <div className="num-setting">{this.state.commAmount}</div>
+          <div className="like-btn reply-icon icon" />
+          <div className="num-setting">{this.state.replyAmount}</div>
         </div>
         <div className="views">
-          <img src={views} alt="" />
-          <div className="num">{this.state.viewAmount}</div>
+          <div className="num-setting view-icon">{this.state.viewAmount}</div>
         </div>
+        <hr />
       </div>
     );
   }

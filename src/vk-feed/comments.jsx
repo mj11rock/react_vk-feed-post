@@ -55,7 +55,7 @@ class LastCom extends Component {
           <div className="com-text">Awesome</div>
           <div className="com-footer">
             <div className="like-com">
-              <div className="like-icon">
+              <div className="footer-like-icon">
                 <img src={likeIcon} alt="" />
               </div>
               <div className="like-amount">{this.state.likeAmount}</div>
