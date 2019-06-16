@@ -12,6 +12,7 @@ class App extends Component {
         <Title />
         <Content />
         <Like />
+        <hr />
         <Comments />
       </div>
     );

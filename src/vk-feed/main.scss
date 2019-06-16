@@ -40,10 +40,6 @@ $date-color: #939393;
   :hover {
     cursor: pointer;
   }
-  hr {
-    border: 0;
-    border-top: 1px solid rgb(204, 204, 204);
-  }
 }
 
 .like {
@@ -58,10 +54,6 @@ $date-color: #939393;
     margin-left: auto;
     padding: 0 21px;
     justify-content: end;
-  }
-  hr {
-    border: 0;
-    border-top: 1px solid rgb(204, 204, 204);
   }
 }
 
@@ -119,5 +111,83 @@ $date-color: #939393;
     margin-right: 5px;
     background-image: url("./viewIcon.svg");
     background-repeat: no-repeat;
+    opacity: 0.7;
+  }
+}
+
+.reply-wrap {
+  margin: 10px 20px;
+
+  img {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    float: left;
+  }
+}
+.choice {
+  color: $main-font-color;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.interes-icon {
+  padding-right: 13px;
+  background: url("./arrow.svg") no-repeat right 7px;
+}
+.last-com {
+  margin: 10px;
+  font-size: 13px;
+  .com-content {
+    margin: 10px 43px;
+    a {
+      color: $main-font-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.com-like-icon {
+  background-image: url("./likeIcon.svg");
+  opacity: 0.5;
+}
+.com-text {
+  margin: 5px 0;
+}
+.com-date {
+  color: $date-color;
+  float: left;
+  margin-right: 8px;
+}
+.show {
+  margin: 10px 0;
+  color: $main-font-color;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.leave-com {
+  margin: 10px;
+  img {
+    margin-right: 8px;
+  }
+  input {
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+    width: 80%;
+
+    &::after {
+      content: "";
+      background-image: url("./send.svg");
+      width: 24px;
+      height: 24px;
+    }
   }
 }

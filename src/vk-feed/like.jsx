@@ -25,7 +25,6 @@ class Like extends Component {
         <div className="views">
           <div className="num-setting view-icon">{this.state.viewAmount}</div>
         </div>
-        <hr />
       </div>
     );
   }

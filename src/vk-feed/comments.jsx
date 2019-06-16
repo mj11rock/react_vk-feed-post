@@ -11,16 +11,14 @@ class Comments extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="reply-wrap">
         <div className="other-comm">
           <div className="options">
-            <span>{this.state.choice[0]}</span>
-            <span>
-              <img src={arrowIcon} alt="" />
-            </span>
+            <span className="choice">{this.state.choice[0]}</span>
+            <span className="interes-icon" />
           </div>
           <LastCom />
-          <div className="show">function to load all comms</div>
+          <div className="show">"function to load all comms"</div>
         </div>
         <div className="leave-com">
           <div className="profPic">
@@ -31,9 +29,6 @@ class Comments extends Component {
             <div className="file-attach" />
             <div className="pic-attach" />
             <div className="emoji-attach" />
-          </div>
-          <div className="send">
-            <img src={sendIcon} alt="" />
           </div>
         </div>
       </div>
@@ -48,20 +43,23 @@ class LastCom extends Component {
         <img src={profilePic} alt="" />
         <div className="com-content">
           <div className="com-author">
+            <a href="">Islombek Salimov</a>
             <div className="delete">
-              <span className="delete-icon">report</span>
+              <span className="delete-icon" />
             </div>
           </div>
           <div className="com-text">Awesome</div>
           <div className="com-footer">
             <div className="like-com">
               <div className="footer-like-icon">
-                <img src={likeIcon} alt="" />
+                <span className="com-like-icon" />
               </div>
               <div className="like-amount">{this.state.likeAmount}</div>
             </div>
-            <div className="com-date">{this.state.comDate}</div>
-            <div className="reply">reply</div>
+            <div className="com-date">One hour ago</div>
+            <div className="reply">
+              <a href="">reply</a>
+            </div>
           </div>
         </div>
       </div>
