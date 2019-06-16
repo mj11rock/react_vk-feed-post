@@ -3,15 +3,13 @@ import postImg from "./postImg.jpg";
 
 class Content extends Component {
   state = {
-    discription: "hello VK!"
+    discription: "Hello VK!"
   };
   render() {
     return (
       <div className="post-content">
         <div className="discription">{this.state.discription}</div>
         <img src={postImg} alt="" />
-
-        <hr />
       </div>
     );
   }

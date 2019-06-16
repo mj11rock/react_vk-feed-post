@@ -7,16 +7,16 @@ class Title extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="post-title">
         <div className="owner-img">
           <a href="">
             <img src={profilePic} alt="" />
           </a>
         </div>
-        <div className="owner-name">
+        <div className="owner-name owner-text-setting">
           <a href="#">{this.state.ownerName}</a>
         </div>
-        <div className="posted-date">
+        <div className="posted-date owner-text-setting">
           <a href="#">{this.state.postDate}</a>
         </div>
       </div>

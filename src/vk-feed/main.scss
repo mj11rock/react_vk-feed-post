@@ -1,3 +1,5 @@
+$main-font-color: #2a5885;
+$date-color: #939393;
 .like {
   position: relative;
   .svg {
@@ -18,7 +20,44 @@
     }
   }
 }
+.owner-img {
+  img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+  }
+}
+.post-title {
+  padding: 15px 20px 0;
+}
+.owner-text-setting {
+  padding-top: 3px;
+  a {
+    text-decoration: none;
+    color: $main-font-color;
 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.posted-date {
+  a {
+    color: $date-color !important;
+  }
+}
+
+.post-content {
+  display: block;
+  padding: 8px 20px 20px;
+
+  .discription {
+    margin: 10px 2px;
+  }
+  img {
+    border-bottom: 1px solid $date-color;
+  }
+}
 .num {
   display: inline-block;
   padding-top: 10px;
